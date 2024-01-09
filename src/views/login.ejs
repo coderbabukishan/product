@@ -1,0 +1,23 @@
+<!-- views/add-product.ejs -->
+
+<h1 class="mt-5 mb-4 header">Welcome Back</h1>
+
+<%if(errorMessage){%>
+    <div class="alert alert-danger" role="alert">
+      <%=  errorMessage %>
+    </div>
+    <%}%>
+
+<form action="/login" method="post" >
+    
+    <div class="mb-3">
+        <label for="desc" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" rows="3" required>
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">password</label>
+        <input type="password" class="form-control" id="password" name="password" >
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    
+</form>

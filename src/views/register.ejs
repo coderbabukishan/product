@@ -1,0 +1,22 @@
+<!-- views/add-product.ejs -->
+
+<h1 class="mt-5 mb-4 header">Register</h1>
+
+
+<form action="/register" method="post" >
+    
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="name" class="form-control" id="name" name="name" >
+    </div>
+    <div class="mb-3">
+        <label for="desc" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" rows="3" required>
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">password</label>
+        <input type="password" class="form-control" id="password" name="password" >
+    </div>
+    <button type="submit" class="btn btn-primary">Registration Now</button>
+    
+</form>
